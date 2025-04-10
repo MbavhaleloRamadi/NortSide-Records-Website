@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact NortSide Records for any inquiries or support, or chat with our AI bot."/>
+  <title>Contact Us | NortSide Records</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div id="loader" class="loader"></div>
+
+  <header class="navbar">
+    <h1 class="logo">NortSide Records</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="whats-new.html">What's New?</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section contact-us-page">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">We'd love to hear from you! Reach out to us for any questions, feedback, or support.</p>
+
+    <div class="contact-form-container">
+      <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>Email: <a href="mailto:nortsiderecords@gmail.com">nortsiderecords@gmail.com</a></p>
+      <p>Phone: +27 82 4035 469</p>
+    </div>
+
+    <!-- AI Chatbot Section -->
+    <div class="chatbot-container">
+      <h3>Need Help? Chat with our AI Assistant!</h3>
+      <div class="chatbot-box">
+        <iframe src="https://app.relevanceai.com/agents/d7b62b/62dbd8a9bb24-4565-b8c3-b03b8cad0e93/9b021c1d-e997-41d2-9f31-2b620f9e3259/embed-chat?starting_message_prompts=Welcome+to+Red+Hot+Zone&hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23db0f0f&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false" width="70%" height="450" frameborder="1"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
