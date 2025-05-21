@@ -3,38 +3,328 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NortSide Records | Publishing & Distribution" />
-  <title>NortSide Records | Landing</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="NortSide Records - Premier music publishing, distribution, and artist development services for emerging and established musicians." />
+  <meta name="keywords" content="music publishing, music distribution, record label, artist development, music production, NortSide Records" />
+  <meta name="author" content="NortSide Records" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="NortSide Records | Music Publishing & Distribution" />
+  <meta property="og:description" content="Breaking barriers in the music industry with innovative publishing, distribution, and artist empowerment services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nortsiderecords.com" />
+  <meta property="og:image" content="images/nortside-social-share.jpg" />
+  
+  <title>NortSide Records | Breaking Barriers in Music</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
-  <div id="loader" class="loader"></div>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader-icon">
+      <i class="fas fa-compact-disc fa-spin"></i>
+    </div>
+  </div>
 
-  <header class="navbar">
-    <h1 class="logo">NortSide Records</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="roster.html">Roster</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="whats-new.html">What's New?</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">
+            <h1>NortSide Records</h1>
+          </a>
+        </div>
+        
+        <div class="mobile-menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="roster.html"><i class="fas fa-users"></i> Artists</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="whats-new.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="about-us.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact-us.html" class="btn-contact"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h2 class="hero-title">Breaking Barriers, One Record at a Time</h2>
-      <p class="hero-subtitle">Music Publishing. Distribution. Artist Empowerment.</p>
-      <a href="home.html" class="btn-primary">Explore Our World</a>
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="hero-title">Breaking Barriers,<br><span class="highlight">One Record at a Time</span></h2>
+        <p class="hero-subtitle">Innovative music publishing, distribution, and artist development for the next generation of musical talent.</p>
+        <div class="hero-cta">
+          <a href="services.html" class="btn btn-primary"><i class="fas fa-headphones"></i> Explore Our Services</a>
+          <a href="roster.html" class="btn btn-secondary"><i class="fas fa-users"></i> Meet Our Artists</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="animated-record">
+          <div class="vinyl-record">
+            <div class="record-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,165.3C960,149,1056,171,1152,176C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Offer</h2>
+        <p>Comprehensive services to elevate your music career</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3>Music Publishing</h3>
+          <p>Protect your creative works and maximize royalty collection across all platforms worldwide.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Global Distribution</h3>
+          <p>Get your music on all major streaming platforms and digital stores with strategic release planning.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Marketing & Promotion</h3>
+          <p>Targeted campaigns to build your audience and increase your music's visibility.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-microphone-alt"></i>
+          </div>
+          <h3>Artist Development</h3>
+          <p>Personalized coaching and career guidance to help you reach your full potential.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Releases Section -->
+  <section class="latest-releases">
+    <div class="container">
+      <div class="section-header">
+        <h2>Latest Releases</h2>
+        <p>Fresh tracks from our roster of talented artists</p>
+      </div>
+      <div class="releases-slider">
+        <div class="release-card">
+          <div class="release-artwork">
+            <img src="/api/placeholder/400/400" alt="Album artwork" />
+            <div class="play-overlay">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="release-info">
+            <h3>Midnight Stories</h3>
+            <p>Luna Eclipse</p>
+            <div class="streaming-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="YouTube Music"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="release-card">
+          <div class="release-artwork">
+            <img src="/api/placeholder/400/400" alt="Album artwork" />
+            <div class="play-overlay">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="release-info">
+            <h3>Urban Wasteland</h3>
+            <p>Echo Chamber</p>
+            <div class="streaming-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="YouTube Music"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="release-card">
+          <div class="release-artwork">
+            <img src="/api/placeholder/400/400" alt="Album artwork" />
+            <div class="play-overlay">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="release-info">
+            <h3>Neon Dreams</h3>
+            <p>Synth Collective</p>
+            <div class="streaming-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="YouTube Music"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-link">
+        <a href="roster.html">View All Releases <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Artist Testimonials</h2>
+        <p>What our roster has to say about working with us</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>"NortSide Records transformed my career. Their expert guidance and innovative approach to distribution helped me reach audiences I never thought possible."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="/api/placeholder/80/80" alt="Artist photo" />
+            <div class="author-info">
+              <h4>Alex Rivers</h4>
+              <p>Electronic Producer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>"The team at NortSide doesn't just distribute music—they understand it. They've been instrumental in developing my sound and building my brand."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="/api/placeholder/80/80" alt="Artist photo" />
+            <div class="author-info">
+              <h4>Maya Song</h4>
+              <p>R&B Vocalist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe to our newsletter for exclusive updates, releases, and opportunities.</p>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required />
+            <label for="consent">I agree to receive emails from NortSide Records</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>NortSide Records</h3>
+          <p>Breaking barriers in music since 2020</p>
+          <div class="social-links">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="link-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="roster.html">Artists</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="whats-new.html">News</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#publishing">Publishing</a></li>
+              <li><a href="services.html#distribution">Distribution</a></li>
+              <li><a href="services.html#marketing">Marketing</a></li>
+              <li><a href="services.html#development">Artist Development</a></li>
+              <li><a href="services.html#production">Production</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
+              <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Music Avenue, Suite 456</p>
+            <p><i class="fas fa-envelope"></i> info@nortsiderecords.com</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NortSide Records. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-

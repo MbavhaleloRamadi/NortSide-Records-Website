@@ -1,53 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Meet the NortSide Records roster - discover our talent." />
-  <title>Roster | NortSide Records</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover NortSide Records' talented roster of artists - from hip-hop innovators to soulful vocalists, our diverse family of musicians are pushing musical boundaries.">
+  <meta name="keywords" content="NortSide Records, music artists, record label roster, music talent, indie musicians">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Artist Roster | NortSide Records">
+  <meta property="og:description" content="Meet our exceptional lineup of musical talent at NortSide Records - where innovation meets passion.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nortsiderecords.com/roster">
+  <title>Artist Roster | NortSide Records</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="canonical" href="https://nortsiderecords.com/roster">
 </head>
-<body>
-  <div id="loader" class="loader"></div>
 
-  <header class="navbar">
-    <h1 class="logo">NortSide Records</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="roster.html" class="active">Roster</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="whats-new.html">What's New?</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader-icon">
+      <i class="fas fa-record-vinyl"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-wrapper">
+      <div class="logo">
+        <a href="index.html">
+          <h1>NortSide Records</h1>
+        </a>
+      </div>
+      <div class="navigation">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="roster.html" class="active"><i class="fas fa-users"></i> Roster</a></li>
+          <li><a href="services.html"><i class="fas fa-music"></i> Services</a></li>
+          <li><a href="releases.html"><i class="fas fa-compact-disc"></i> Releases</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="contact.html" class="btn-contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="section roster">
-    <h2 class="section-title">Our Artists</h2>
-    <div class="artist-grid">
-
-      <!-- Artist Card -->
-      <a href="bossg.html" class="artist-card">
-        <img src="assets/bossg.jpg" alt="Boss G The Dog" />
-        <div class="artist-name">Boss G The Dog</div>
-        <div class="artist-tagline">Bringing Bark and Bars</div>
-      </a>
-
-      <!-- More artists in future -->
-      <!--
-      <a href="artistname.html" class="artist-card">
-        <img src="assets/artistname.jpg" alt="Artist Name" />
-        <div class="artist-name">Artist Name</div>
-        <div class="artist-tagline">Tagline or genre</div>
-      </a>
-      -->
-
+  <!-- Hero Section -->
+  <section class="roster-hero">
+    <div class="container">
+      <div class="roster-hero-content">
+        <h1>Our Talented Artists</h1>
+        <p>Meet the exceptional musicians pushing boundaries at NortSide Records</p>
+      </div>
     </div>
-  </main>
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="#ffffff" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,48C672,53,768,75,864,74.7C960,75,1056,53,1152,42.7C1248,32,1344,32,1392,32L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+      </svg>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Filter Section -->
+  <section class="roster-filter">
+    <div class="container">
+      <div class="filter-wrapper">
+        <div class="filter-group">
+          <label for="genre-filter">Filter by Genre:</label>
+          <select id="genre-filter" class="filter-select">
+            <option value="all">All Genres</option>
+            <option value="hip-hop">Hip Hop</option>
+            <option value="rnb">R&B</option>
+            <option value="pop">Pop</option>
+            <option value="electronic">Electronic</option>
+            <option value="indie">Indie</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <input type="text" id="artist-search" placeholder="Search artists...">
+          <button id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Artist -->
+  <section class="featured-artist">
+    <div class="container">
+      <div class="featured-wrapper">
+        <div class="featured-content">
+          <div class="featured-label">Featured Artist</div>
+          <h2>Boss G The Dog</h2>
+          <p class="featured-tagline">Bringing Bark and Bars</p>
+          <p class="featured-bio">Boss G The Dog is breaking boundaries as the first canine hip-hop artist to top the charts. With his unique flow and authentic street tales, he's redefining what it means to be an artist in today's music landscape.</p>
+          <div class="featured-stats">
+            <div class="stat">
+              <i class="fas fa-headphones"></i>
+              <span>2.4M</span>
+              <p>Monthly Listeners</p>
+            </div>
+            <div class="stat">
+              <i class="fas fa-compact-disc"></i>
+              <span>3</span>
+              <p>Albums</p>
+            </div>
+            <div class="stat">
+              <i class="fas fa-award"></i>
+              <span>7</span>
+              <p>Awards</p>
+            </div>
+          </div>
+          <a href="artist/bossg.html" class="btn btn-primary">View Profile <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-image">
+          <div class="featured-image-container">
+            <img src="/api/placeholder/500/600" alt="Boss G The Dog - Featured Artist at NortSide Records">
+            <div class="featured-social">
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artist Roster -->
+  <section class="artist-roster">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Artists</h2>
+        <p>Discover the diverse talents that make up the NortSide Records family</p>
+      </div>
+      
+      <div class="artist-grid" id="artist-grid">
+        <!-- Artist Card 1 -->
+        <div class="artist-card" data-genre="hip-hop">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="Boss G The Dog">
+            <div class="artist-overlay">
+              <a href="artist/bossg.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>Boss G The Dog</h3>
+            <p class="artist-genre">Hip Hop</p>
+            <p class="artist-desc">Bringing Bark and Bars</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Artist Card 2 -->
+        <div class="artist-card" data-genre="rnb">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="Melody Soul">
+            <div class="artist-overlay">
+              <a href="artist/melodysoul.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>Melody Soul</h3>
+            <p class="artist-genre">R&B</p>
+            <p class="artist-desc">Voice of a generation</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Artist Card 3 -->
+        <div class="artist-card" data-genre="electronic">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="BeatMatrix">
+            <div class="artist-overlay">
+              <a href="artist/beatmatrix.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>BeatMatrix</h3>
+            <p class="artist-genre">Electronic</p>
+            <p class="artist-desc">Digital sound pioneer</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Artist Card 4 -->
+        <div class="artist-card" data-genre="pop">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="Nova Star">
+            <div class="artist-overlay">
+              <a href="artist/novastar.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>Nova Star</h3>
+            <p class="artist-genre">Pop</p>
+            <p class="artist-desc">Rising to the top</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Artist Card 5 -->
+        <div class="artist-card" data-genre="indie">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="The Wavelengths">
+            <div class="artist-overlay">
+              <a href="artist/wavelengths.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>The Wavelengths</h3>
+            <p class="artist-genre">Indie</p>
+            <p class="artist-desc">Authentic sound collective</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Artist Card 6 -->
+        <div class="artist-card" data-genre="hip-hop">
+          <div class="artist-image">
+            <img src="/api/placeholder/400/400" alt="Lyric Master">
+            <div class="artist-overlay">
+              <a href="artist/lyricmaster.html" class="artist-view-profile">View Profile</a>
+            </div>
+          </div>
+          <div class="artist-info">
+            <h3>Lyric Master</h3>
+            <p class="artist-genre">Hip Hop</p>
+            <p class="artist-desc">Poetry in motion</p>
+            <div class="artist-links">
+              <a href="#" title="Spotify"><i class="fab fa-spotify"></i></a>
+              <a href="#" title="Apple Music"><i class="fab fa-apple"></i></a>
+              <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- No Results Message -->
+      <div id="no-results" class="no-results hidden">
+        <i class="fas fa-search"></i>
+        <h3>No artists found</h3>
+        <p>Try adjusting your search or filter criteria</p>
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button id="load-more" class="btn btn-secondary">Load More Artists</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Our Roster -->
+  <section class="join-roster">
+    <div class="container">
+      <div class="join-wrapper">
+        <div class="join-content">
+          <h2>Join Our Roster</h2>
+          <p>Are you an artist looking for the right label to help take your career to the next level? NortSide Records is always on the lookout for exceptional talent to join our growing family.</p>
+          <ul class="join-benefits">
+            <li><i class="fas fa-check-circle"></i> Professional production support</li>
+            <li><i class="fas fa-check-circle"></i> Marketing and promotion</li>
+            <li><i class="fas fa-check-circle"></i> Distribution across all platforms</li>
+            <li><i class="fas fa-check-circle"></i> Tour and performance opportunities</li>
+            <li><i class="fas fa-check-circle"></i> Creative development</li>
+          </ul>
+          <a href="submissions.html" class="btn btn-primary">Submit Your Demo <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest releases, artist news, and exclusive content</p>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">I agree to receive updates from NortSide Records</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>NortSide Records</h3>
+          <p>Discover. Create. Inspire.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Our Artists</a></li>
+            <li><a href="releases.html">Releases</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="submissions.html">Artist Submissions</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="press.html">Press Kit</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Music Avenue, Studio City, CA 90210</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@nortsiderecords.com</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 NortSide Records. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/roster.js"></script>
 </body>
 </html>
