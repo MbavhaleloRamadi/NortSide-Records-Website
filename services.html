@@ -3,55 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore the professional music services offered by NortSide Records."/>
+  <meta name="description" content="Explore the professional music production and artist development services offered by NortSide Records."/>
   <title>Services | NortSide Records</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <div id="loader" class="loader"></div>
-
-  <header class="navbar">
-    <h1 class="logo">NortSide Records</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="roster.html">Roster</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="whats-new.html">What's New?</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="section services-page">
-    <h2 class="section-title">What We Offer</h2>
-    <p class="section-subtitle">NortSide Records provides top-tier services to elevate artists, producers, and indie labels.</p>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Publishing & Distribution</h3>
-        <p>We get your music onto all major platforms worldwide, while making sure you get paid. Royalty collection, rights management, and beyond.</p>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader-icon">
+      <i class="fas fa-compact-disc fa-spin"></i>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-wrapper">
+      <div class="logo">
+        <a href="index.html">
+          <h1>NortSide Records</h1>
+        </a>
       </div>
-
-      <div class="service-card">
-        <h3>Audio Mixing</h3>
-        <p>Give your tracks that professional edge. Balanced levels, clean tone, and depth — we handle every frequency with care.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Audio Mastering</h3>
-        <p>Final polish before you go live. Our mastering service ensures clarity, loudness, and streaming-platform readiness across devices.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Music Consulting</h3>
-        <p>Just started a label? Need help building your brand or setting up distribution? We guide emerging music businesses step-by-step.</p>
+      
+      <div class="navigation">
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="roster.html"><i class="fas fa-users"></i> Roster</a></li>
+          <li><a href="services.html" class="active"><i class="fas fa-headphones-alt"></i> Services</a></li>
+          <li><a href="whats-new.html"><i class="fas fa-newspaper"></i> What's New?</a></li>
+          <li><a href="about-us.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="contact-us.html" class="btn-contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
       </div>
     </div>
-  </main>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="services-hero">
+    <div class="container">
+      <div class="services-hero-content">
+        <h1>Professional Music <span class="highlight">Services</span></h1>
+        <p>Elevate your sound with our industry-standard production, distribution, and artist development solutions.</p>
+      </div>
+    </div>
+    <div class="services-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,128C672,128,768,160,864,176C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Offer</h2>
+        <p>NortSide Records provides top-tier services to elevate artists, producers, and indie labels in today's competitive music landscape.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Publishing & Distribution</h3>
+          <p>We get your music onto all major streaming platforms worldwide while ensuring you receive proper royalties. Our comprehensive service includes digital distribution, rights management, and metadata optimization.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-sliders-h"></i>
+          </div>
+          <h3>Audio Mixing</h3>
+          <p>Give your tracks that professional edge with our expert mixing engineers. We balance levels, create spatial depth, and ensure tonal clarity across all frequency ranges to make your music sound its absolute best.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <h3>Audio Mastering</h3>
+          <p>The final polish before release. Our mastering service ensures optimal loudness, clarity, and consistency across all playback systems, making your music streaming-platform ready and competitive in the market.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Music Consulting</h3>
+          <p>Just started a label? Need help building your brand or setting up distribution? Our industry experts provide guidance on strategy, marketing, and business development for emerging artists and music businesses.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-microphone-alt"></i>
+          </div>
+          <h3>Vocal Production</h3>
+          <p>Transform raw vocal recordings into professional-quality tracks with our specialized vocal production services. We handle everything from pitch correction and timing adjustments to creative effects and harmonies.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Music Video Production</h3>
+          <p>Complete video production services from concept development to final editing. Our creative team helps you visualize your music with high-quality videos that capture your artistic vision and engage your audience.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Elevate Your Music?</h2>
+        <p>Contact us today to discuss your project needs and how NortSide Records can help bring your musical vision to life.</p>
+        <div class="cta-buttons">
+          <a href="contact-us.html" class="btn btn-primary">Get Started <i class="fas fa-play"></i></a>
+          <a href="pricing.html" class="btn btn-secondary">View Pricing <i class="fas fa-tag"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>NortSide Records</h3>
+          <p>Amplifying talent. Creating legends.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="roster.html">Roster</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="whats-new.html">What's New?</a></li>
+              <li><a href="about-us.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Distribution</a></li>
+              <li><a href="#">Audio Mixing</a></li>
+              <li><a href="#">Audio Mastering</a></li>
+              <li><a href="#">Music Consulting</a></li>
+              <li><a href="#">Video Production</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NortSide Records. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/services.js"></script>
 </body>
 </html>
